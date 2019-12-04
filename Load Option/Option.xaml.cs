@@ -30,6 +30,7 @@ namespace Load_Option
             loadText.Text = pu_DT + "\n" + 
                             pu_CS + "\n" + 
                             de_DT + "\n" + 
+                            de_CS + "\n" +
                             dh + "\n" + 
                             loadDis + "\n" + 
                             mapLink + "\n" + 

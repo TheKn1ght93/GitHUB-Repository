@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
+using System.Text.RegularExpressions;
+
+
 
 namespace Load_Option
 {
@@ -22,7 +26,6 @@ namespace Load_Option
         {
             InitializeComponent();            
         }
-
         string pu_DT,
             pu_CS,
             de_DT,
@@ -39,7 +42,20 @@ namespace Load_Option
             broker,
             addInfo;
 
+        private void grossTB_KeyPress(object sender, System.Windows.Input.KeyEventArgs e)
+        {
 
+        }
+
+        private void textInputPrew(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+        private void gross_TB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+       
         private void Option_Click(object sender, RoutedEventArgs e)
         {
             Option option = new Option();
@@ -48,7 +64,7 @@ namespace Load_Option
             pu_DT = pu_DT_Label.Content + pu_DT_TB.Text;
             pu_CS = pu_CS_Label.Content + pu_CS_TB.Text;
             de_DT = de_DT_Label.Content + de_DT_TB.Text;
-            de_CS = de_CS_Label.Content + de_DT_TB.Text;
+            de_CS = de_CS_Label.Content + de_CS_TB.Text;
             dh = dh_Label.Content + dh_TB.Text;
             loadDis = load_Distance_Label.Content + loadDistance_TB.Text;
             mapLink = map_Link_Label.Content + map_Link_TB.Text;
