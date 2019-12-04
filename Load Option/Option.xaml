@@ -1,0 +1,14 @@
+﻿<Window x:Class="Load_Option.Option"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Load_Option"
+        mc:Ignorable="d"
+        Title="Load Option" Height="550" Width="400"  WindowStartupLocation="CenterOwner" >
+    <Grid Background="#FFFFF2AB" Margin="0,0,0,1">
+        <TextBox x:Name="loadText" HorizontalAlignment="Left"  Background="#FFFFF2AB" Height="442" TextWrapping="Wrap"  VerticalAlignment="Top" Width="394" AcceptsReturn="True" AcceptsTab="True" BorderThickness="0"/>
+        <Button x:Name="clipBoard_copy" Content=" Copy to Clipboard" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="270,491,0,0" Click="clipBoard_copy_Click" Height="19" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
