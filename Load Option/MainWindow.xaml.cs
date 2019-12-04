@@ -42,18 +42,37 @@ namespace Load_Option
             broker,
             addInfo;
 
-        private void grossTB_KeyPress(object sender, System.Windows.Input.KeyEventArgs e)
-        {
-
-        }
+       
 
         private void textInputPrew(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
+
+        private void loadDistance_TB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string str1 = dh_TB.Text;            
+            int.TryParse(str1, out int numbers1);
+            string str2 = loadDistance_TB.Text;
+            int.TryParse(str2, out int numbers2);
+
+            int totalMiles = numbers1 + numbers2;
+            string totalmilestosting = totalMiles.ToString();
+
+            totalMiles_Label.Content = totalmilestosting;
+            
+        }
         private void gross_TB_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
+            double numbers;
+            string str = gross_TB.Text;
+            double.TryParse(str, out numbers);
+            double rateRes = numbers / 2;
+            rateResult.Content = rateRes.ToString();
+
+
+
         }
        
         private void Option_Click(object sender, RoutedEventArgs e)
