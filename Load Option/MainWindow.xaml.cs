@@ -42,17 +42,7 @@ namespace Load_Option
             phone,
             broker,
             addInfo;
-
-        private void clear_button_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
-        {
-            
-        }
-
-        private void clear_button_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
-        {
-            
-            
-        }
+        
 
         private void loadDistance_TB_TextChanged_1(object sender, TextChangedEventArgs e)
         {
@@ -77,8 +67,6 @@ namespace Load_Option
             double.TryParse(gross, out double grossToint);
             double.TryParse(totalMileas, out double totalMileastoDouble);
             double rateRes = grossToint / totalMileastoDouble;
-            //string rateResFormat = rateRes.ToString();
-            //String.Format("{0:0.00}", rateResFormat);
             rateResult.Content = rateRes.ToString("N2");
         }
 
@@ -125,7 +113,6 @@ namespace Load_Option
             add_Info_TB.Text = "";
             rateResult.Content = "0";
             totalMiles_Label.Content = "0";
-
         }
     }
    
