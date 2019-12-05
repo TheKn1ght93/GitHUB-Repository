@@ -42,43 +42,38 @@ namespace Load_Option
             broker,
             addInfo;
 
-       
+        private void loadDistance_TB_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+            string str1 = dh_TB.Text;
+            int.TryParse(str1, out int numbers1);
+            string str2 = loadDistance_TB.Text;
+            int.TryParse(str2, out int numbers2);
+            int totalMiles = (numbers1 + numbers2);
+            totalMiles_Label.Content = totalMiles.ToString();
+        }
 
         private void textInputPrew(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
 
-        private void loadDistance_TB_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            string str1 = dh_TB.Text;            
-            int.TryParse(str1, out int numbers1);
-            string str2 = loadDistance_TB.Text;
-            int.TryParse(str2, out int numbers2);
 
-            int totalMiles = numbers1 + numbers2;
-            string totalmilestosting = totalMiles.ToString();
-
-            totalMiles_Label.Content = totalmilestosting;
-            
-        }
         private void gross_TB_TextChanged(object sender, TextChangedEventArgs e)
         {
-
-            double numbers;
-            string str = gross_TB.Text;
-            double.TryParse(str, out numbers);
-            double rateRes = numbers / 2;
-            rateResult.Content = rateRes.ToString();
-
-
-
+            string gross = gross_TB.Text;
+            string totalMileas = totalMiles_Label.Content.ToString();
+            double.TryParse(gross, out double grossToint);
+            double.TryParse(totalMileas, out double totalMileastoDouble);
+            double rateRes = grossToint / totalMileastoDouble;
+            //string rateResFormat = rateRes.ToString();
+            //String.Format("{0:0.00}", rateResFormat);
+            rateResult.Content = rateRes.ToString("N2");
         }
-       
+
         private void Option_Click(object sender, RoutedEventArgs e)
         {
             Option option = new Option();
-            option.Show();         
+            option.Show();
 
             pu_DT = pu_DT_Label.Content + pu_DT_TB.Text;
             pu_CS = pu_CS_Label.Content + pu_CS_TB.Text;

@@ -156,5 +156,8 @@
   <ItemGroup>
     <Resource Include="preview_mRA_icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="baseline_delete_sweep_black_18dp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
