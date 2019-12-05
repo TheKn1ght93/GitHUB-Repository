@@ -42,7 +42,32 @@
         <TextBox x:Name="broker_TB" HorizontalAlignment="Left" Height="23" Margin="128,327,0,0"  VerticalAlignment="Top" Width="250" Background="#FFFFF2AB" BorderThickness="0,0,0,1" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="14"/>
         <TextBox x:Name="add_Info_TB" HorizontalAlignment="Left" Height="79" Margin="0,432,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="337" Background="#FFFFF2AB" Grid.ColumnSpan="2" AcceptsReturn="True" AcceptsTab="True" TabIndex="15"/>
         <Button x:Name="clear_button" HorizontalAlignment="Left"  Margin="10,367,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="clear_button_Click" BorderThickness="0" ClickMode="Press" MouseEnter="clear_button_MouseEnter" MouseLeave="clear_button_MouseLeave" RenderTransformOrigin="0.5,0.5">
-            
+            <Button.Background>
+                <ImageBrush ImageSource="baseline_delete_sweep_black_18dp.png" Stretch="None"/>
+            </Button.Background>
+            <Button.Foreground>
+                <ImageBrush ImageSource="baseline_delete_sweep_black_18dp.png" Stretch="None"/>
+            </Button.Foreground>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
         </Button>
         <Button x:Name="Option" Content="Option" HorizontalAlignment="Left" Margin="342,479,0,0" VerticalAlignment="Top" Width="47"  Height="32" Background="#FF78F178" Click="Option_Click" Grid.ColumnSpan="2" BorderBrush="{x:Null}" Foreground="Black" OpacityMask="#FFEC0707"/>
 
