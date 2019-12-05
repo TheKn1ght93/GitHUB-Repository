@@ -12,8 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Drawing;
+
 
 
 
@@ -41,6 +42,17 @@ namespace Load_Option
             phone,
             broker,
             addInfo;
+
+        private void clear_button_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            
+        }
+
+        private void clear_button_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            
+            
+        }
 
         private void loadDistance_TB_TextChanged_1(object sender, TextChangedEventArgs e)
         {
@@ -93,6 +105,27 @@ namespace Load_Option
 
             option.text_Option(pu_DT, pu_CS, de_DT, de_CS, dh, loadDis, mapLink, commodity,
                 weight, gross, mc, name, phone, broker, addInfo);
+        }
+        private void clear_button_Click(object sender, RoutedEventArgs e)
+        {
+            pu_DT_TB.Text = "";
+            pu_CS_TB.Text = "";
+            de_DT_TB.Text = "";
+            de_CS_TB.Text = "";
+            dh_TB.Text = "";
+            loadDistance_TB.Text = "";
+            map_Link_TB.Text = "";
+            commodity_TB.Text = "";
+            weight_TB.Text = "";
+            gross_TB.Text = "";
+            mc_TB.Text = "";
+            name_TB.Text = "";
+            phone_TB.Text = "";
+            broker_TB.Text = "";
+            add_Info_TB.Text = "";
+            rateResult.Content = "0";
+            totalMiles_Label.Content = "0";
+
         }
     }
    

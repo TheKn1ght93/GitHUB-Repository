@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Load Info" Height="550" Width="410" >
     <Grid Background="#FFFFF2AB">
-        <Button x:Name="Option" Content="Option" HorizontalAlignment="Left" Margin="342,479,0,0" VerticalAlignment="Top" Width="47"  Height="32" Background="#FF78F178" Click="Option_Click" Grid.ColumnSpan="2"/>
         <Label x:Name="pu_DT_Label" Content="PU date/time: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25
                " Width="123" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <Label x:Name="pu_CS_Label" Content="PU City/State: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,25,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
@@ -25,6 +24,8 @@
         <Label x:Name="phone_Label" Content="Phone: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,300,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <Label x:Name="broker_Label" Content="Broker: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,325,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <Label x:Name="addInfo_Label" Content="Additional Info: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,402,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Label x:Name="rateResult" Content="0" HorizontalAlignment="Left" Margin="213,224,0,0" VerticalAlignment="Top" Width="56" FontWeight="Bold"/>
+        <Label x:Name="totalMiles_Label" Content="0" HorizontalAlignment="Left" Margin="269,122,0,0" VerticalAlignment="Top" FontWeight="SemiBold" Width="50"/>
         <TextBox x:Name="pu_DT_TB" HorizontalAlignment="Left" Height="23" Margin="128,2,0,0"  VerticalAlignment="Top" Width="250" Background="#FFFFF2AB" BorderThickness="0,0,0,1" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="1"/>
         <TextBox x:Name="pu_CS_TB" HorizontalAlignment="Left" Height="23" Margin="128,27,0,0"  VerticalAlignment="Top" Width="250" Background="#FFFFF2AB" BorderThickness="0,0,0,1" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="2"/>
         <TextBox x:Name="de_DT_TB" HorizontalAlignment="Left" Height="23" Margin="128,52,0,0"  VerticalAlignment="Top" Width="250" Background="#FFFFF2AB" BorderThickness="0,0,0,1" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="3"/>
@@ -40,13 +41,11 @@
         <TextBox x:Name="phone_TB" HorizontalAlignment="Left" Height="23" Margin="128,302,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="13"/>
         <TextBox x:Name="broker_TB" HorizontalAlignment="Left" Height="23" Margin="128,327,0,0"  VerticalAlignment="Top" Width="250" Background="#FFFFF2AB" BorderThickness="0,0,0,1" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="14"/>
         <TextBox x:Name="add_Info_TB" HorizontalAlignment="Left" Height="79" Margin="0,432,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="337" Background="#FFFFF2AB" Grid.ColumnSpan="2" AcceptsReturn="True" AcceptsTab="True" TabIndex="15"/>
-        <Label x:Name="rateResult" Content="0" HorizontalAlignment="Left" Margin="213,224,0,0" VerticalAlignment="Top" Width="56" FontWeight="Bold"/>
-        <Label x:Name="totalMiles_Label" Content="0" HorizontalAlignment="Left" Margin="268,122,0,0" VerticalAlignment="Top" FontWeight="SemiBold" Width="50"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="357,385,0,0" VerticalAlignment="Top" Width="30" Height="30" BorderBrush="Black" ClickMode="Press">
-            <Button.Background>
-                <ImageBrush ImageSource="baseline_delete_sweep_black_18dp.png" Stretch="None"/>
-            </Button.Background>
+        <Button x:Name="clear_button" HorizontalAlignment="Left"  Margin="10,367,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="clear_button_Click" BorderThickness="0" ClickMode="Press" MouseEnter="clear_button_MouseEnter" MouseLeave="clear_button_MouseLeave" RenderTransformOrigin="0.5,0.5">
+            
         </Button>
+        <Button x:Name="Option" Content="Option" HorizontalAlignment="Left" Margin="342,479,0,0" VerticalAlignment="Top" Width="47"  Height="32" Background="#FF78F178" Click="Option_Click" Grid.ColumnSpan="2" BorderBrush="{x:Null}" Foreground="Black" OpacityMask="#FFEC0707"/>
+
 
     </Grid>
 </Window>
