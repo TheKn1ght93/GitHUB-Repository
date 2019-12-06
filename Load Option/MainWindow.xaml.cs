@@ -27,8 +27,6 @@ namespace Load_Option
         {
             InitializeComponent();            
         }
-
-
         string pu_DT,
             pu_CS,
             de_DT,
@@ -43,9 +41,7 @@ namespace Load_Option
             name,
             phone,
             broker,
-            addInfo;
-
-        
+            addInfo;        
         private void loadDistance_TB_TextChanged_1(object sender, TextChangedEventArgs e)
         {
             string str1 = dh_TB.Text;
