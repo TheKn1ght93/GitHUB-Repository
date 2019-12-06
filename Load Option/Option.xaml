@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Load_Option"
         mc:Ignorable="d"
-        Title="Load Option" Height="550" Width="400"  WindowStartupLocation="CenterOwner" >
+        Title="Load Option" Height="404.81" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" >
     <Grid Background="#FFFFF2AB" Margin="0,0,0,1">
-        <TextBox x:Name="loadText" HorizontalAlignment="Left"  Background="#FFFFF2AB" Height="442" TextWrapping="Wrap"  VerticalAlignment="Top" Width="394" AcceptsReturn="True" AcceptsTab="True" BorderThickness="0"/>
-        <Button x:Name="clipBoard_copy" Content=" Copy to Clipboard" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="270,491,0,0" Click="clipBoard_copy_Click" Height="19" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="loadText" HorizontalAlignment="Left"  Background="#FFFFF2AB" Height="330" TextWrapping="Wrap"  VerticalAlignment="Top" Width="394" AcceptsReturn="True" AcceptsTab="True" BorderThickness="0" Margin="0,0,-2,0"/>
+        <Button x:Name="clipBoard_copy" Content=" Copy to Clipboard" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="142,335,0,0" Click="clipBoard_copy_Click" Height="19" VerticalContentAlignment="Center" Cursor="Hand" Focusable="False" IsTabStop="False" ToolTip="Copy"/>
 
     </Grid>
 </Window>
