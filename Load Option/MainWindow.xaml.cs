@@ -15,7 +15,9 @@ using System.Windows.Shapes;
 using System.Text.RegularExpressions;
 using System.Drawing;
 
-
+//ToDO
+//FInd solution how to add a textboxes dinamically
+//1241
 
 
 namespace Load_Option
@@ -41,8 +43,7 @@ namespace Load_Option
             name,
             phone,
             broker,
-            addInfo;
-        
+            addInfo;        
 
         private void loadDistance_TB_TextChanged_1(object sender, TextChangedEventArgs e)
         {

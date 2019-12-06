@@ -13,9 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace Load_Option
-{
- 
-    
+{    
     public partial class Option : Window
     {
        
@@ -41,7 +39,7 @@ namespace Load_Option
                             name + "\n" + 
                             phone + "\n" + 
                             broker + "\n" + 
-                            addInfo;            
+                            addInfo;
         }
 
         private void clipBoard_copy_Click(object sender, RoutedEventArgs e)
