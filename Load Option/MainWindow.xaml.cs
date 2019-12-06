@@ -54,13 +54,10 @@ namespace Load_Option
             int totalMiles = (numbers1 + numbers2);
             totalMiles_Label.Content = totalMiles.ToString();
         }
-
         private void textInputPrew(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
-
-
         private void gross_TB_TextChanged(object sender, TextChangedEventArgs e)
         {
             string gross = gross_TB.Text;
@@ -70,7 +67,6 @@ namespace Load_Option
             double rateRes = grossToint / totalMileastoDouble;
             rateResult.Content = rateRes.ToString("N2");
         }
-
         private void Option_Click(object sender, RoutedEventArgs e)
         {
             Option option = new Option();
@@ -115,6 +111,7 @@ namespace Load_Option
             rateResult.Content = "0";
             totalMiles_Label.Content = "0";
         }
+
     }
    
 
