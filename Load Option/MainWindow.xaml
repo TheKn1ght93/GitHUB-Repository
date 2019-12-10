@@ -5,43 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Load_Option"
         mc:Ignorable="d"
-        Title="Load Info" Height="550" Width="344.4" ResizeMode="NoResize">
+        Title="Load Info" Height="738.4" Width="350">
     <Grid Background="#FFFFF2AB">
         <Label x:Name="pu_DT_Label" Content="PU date/time: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25
                " Width="123" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="pu_CS_Label" Content="PU City/State: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,25,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="de_DT_Label" Content="Delivery date/time: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,50,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="de_CS_Label" Content="Delivery City/State: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,75,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="dh_Label" Content="DH-D: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,100,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="load_Distance_Label" Content="Loaded distance: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,125,0,0" FontWeight="Bold" RenderTransformOrigin="0.262,0.473" Grid.ColumnSpan="2"/>
-        <Label x:Name="totalMileage_Label" Content="Total Miles: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="75" Margin="193,122,0,0" FontWeight="Bold" RenderTransformOrigin="0.262,0.473"/>
-        <Label x:Name="map_Link_Label" Content="Map link: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,150,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="commodity_label" Content="Commodity: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,175,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="weight_label" Content="Weight: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,200,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="gross_label" Content="Gross: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,225,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="mc_label" Content="MC#: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,250,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="name_Label" Content="Name: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,275,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="phone_Label" Content="Phone: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,300,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="broker_Label" Content="Broker: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,325,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="addInfo_Label" Content="Additional Info: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,402,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="rateResult" Content="0" HorizontalAlignment="Left" Margin="213,224,0,0" VerticalAlignment="Top" Width="56" FontWeight="Bold"/>
-        <Label x:Name="totalMiles_Label" Content="0" HorizontalAlignment="Left" Margin="269,122,0,0" VerticalAlignment="Top" FontWeight="SemiBold" Width="50"/>
-        <TextBox x:Name="pu_DT_TB" HorizontalAlignment="Left" Height="23" Margin="128,2,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="1"/>
-        <TextBox x:Name="pu_CS_TB" HorizontalAlignment="Left" Height="23" Margin="128,27,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="2"/>
-        <TextBox x:Name="de_DT_TB" HorizontalAlignment="Left" Height="23" Margin="128,52,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="3"/>
-        <TextBox x:Name="de_CS_TB" HorizontalAlignment="Left" Height="23" Margin="128,77,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="4"/>
-        <TextBox x:Name="dh_TB" HorizontalAlignment="Left" Height="23" Margin="128,102,0,0"  VerticalAlignment="Top" Width="60" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="5" PreviewTextInput="textInputPrew" TextChanged="loadDistance_TB_TextChanged_1"/>
-        <TextBox x:Name="loadDistance_TB" HorizontalAlignment="Left" Height="23" Margin="128,127,0,0"  VerticalAlignment="Top" Width="60" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="6" PreviewTextInput="textInputPrew" TextChanged="loadDistance_TB_TextChanged_1"/>
-        <TextBox x:Name="map_Link_TB" HorizontalAlignment="Left" Height="23" Margin="128,152,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="7"/>
-        <TextBox x:Name="commodity_TB" HorizontalAlignment="Left" Height="23" Margin="128,177,0,0"  VerticalAlignment="Top" Width="191" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="8"/>
-        <TextBox x:Name="weight_TB" HorizontalAlignment="Left" Height="23" Margin="128,202,0,0"  VerticalAlignment="Top" Width="60" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="9" PreviewTextInput="textInputPrew" MaxLength="5"/>
-        <TextBox x:Name="gross_TB" HorizontalAlignment="Left" Height="23" Margin="128,227,0,0"  VerticalAlignment="Top" Width="60" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="10" TextChanged="gross_TB_TextChanged" RenderTransformOrigin="0.25,0.504" PreviewTextInput="textInputPrew" />
-        <TextBox x:Name="mc_TB" HorizontalAlignment="Left" Height="23" Margin="128,252,0,0"  VerticalAlignment="Top" Width="70" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="11" PreviewTextInput="textInputPrew" MaxLength="8"/>
-        <TextBox x:Name="name_TB" HorizontalAlignment="Left" Height="23" Margin="128,277,0,0"  VerticalAlignment="Top" Width="100" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="12"/>
-        <TextBox x:Name="phone_TB" HorizontalAlignment="Left" Height="23" Margin="128,302,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="13"/>
-        <TextBox x:Name="broker_TB" HorizontalAlignment="Left" Height="23" Margin="128,327,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="14"/>
-        <TextBox x:Name="add_Info_TB" HorizontalAlignment="Left" Height="79" Margin="0,432,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="337" Background="#FFFFF2AB" Grid.ColumnSpan="2" AcceptsReturn="True" AcceptsTab="True" TabIndex="15"/>
-        <Button x:Name="clear_button" HorizontalAlignment="Left"  Margin="10,367,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="clear_button_Click" BorderThickness="0" ClickMode="Press" RenderTransformOrigin="0.5,0.5" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <Label x:Name="pu_CS_Label" Content="PU City/State: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,77,0,0" FontWeight="Bold"/>
+        <Label x:Name="de_DT_Label" Content="Delivery date/time: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,154,0,0" FontWeight="Bold"/>
+        <Label x:Name="de_CS_Label" Content="Delivery City/State: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,225,0,0" FontWeight="Bold"/>
+        <Label x:Name="dh_Label" Content="DH-D: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,301,0,0" FontWeight="Bold"/>
+        <Label x:Name="load_Distance_Label" Content="Loaded distance: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,326,0,0" FontWeight="Bold" RenderTransformOrigin="0.262,0.473"/>
+        <Label x:Name="totalMileage_Label" Content="Total Miles: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="75" Margin="193,323,0,0" FontWeight="Bold" RenderTransformOrigin="0.262,0.473"/>
+        <Label x:Name="map_Link_Label" Content="Map link: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,351,0,0" FontWeight="Bold"/>
+        <Label x:Name="commodity_label" Content="Commodity: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,376,0,0" FontWeight="Bold"/>
+        <Label x:Name="weight_label" Content="Weight: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,401,0,0" FontWeight="Bold"/>
+        <Label x:Name="gross_label" Content="Gross: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,426,0,0" FontWeight="Bold"/>
+        <Label x:Name="mc_label" Content="MC#: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,451,0,0" FontWeight="Bold"/>
+        <Label x:Name="name_Label" Content="Name: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,476,0,0" FontWeight="Bold"/>
+        <Label x:Name="phone_Label" Content="Phone: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,501,0,0" FontWeight="Bold"/>
+        <Label x:Name="broker_Label" Content="Broker: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,526,0,0" FontWeight="Bold"/>
+        <Label x:Name="addInfo_Label" Content="Additional Info: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,605,0,0" FontWeight="Bold"/>
+        <Label x:Name="rateResult" Content="0" HorizontalAlignment="Left" Margin="213,425,0,0" VerticalAlignment="Top" Width="56" FontWeight="Bold"/>
+        <Label x:Name="totalMiles_Label" Content="0" HorizontalAlignment="Left" Margin="269,323,0,0" VerticalAlignment="Top" FontWeight="SemiBold" Width="50"/>
+        <TextBox x:Name="pu_DT_TB" HorizontalAlignment="Left" Height="75" Margin="128,0,0,0"  VerticalAlignment="Top" Width="200" BorderThickness="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TabIndex="1" AcceptsReturn="True" ScrollViewer.CanContentScroll="True">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFFFF2AB"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="pu_CS_TB" HorizontalAlignment="Left" Height="75" Margin="128,77,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" TabIndex="2" ScrollViewer.CanContentScroll="True" AcceptsReturn="True">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="de_DT_TB" HorizontalAlignment="Left" Height="69" Margin="128,154,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TabIndex="3" AcceptsReturn="True">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="de_CS_TB" HorizontalAlignment="Left" Height="75" Margin="128,225,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TabIndex="4" AcceptsReturn="True">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="dh_TB" HorizontalAlignment="Left" Height="23" Margin="128,303,0,0"  VerticalAlignment="Top" Width="60" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="5" PreviewTextInput="textInputPrew" TextChanged="loadDistance_TB_TextChanged_1"/>
+        <TextBox x:Name="loadDistance_TB" HorizontalAlignment="Left" Height="23" Margin="128,328,0,0"  VerticalAlignment="Top" Width="60" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="6" PreviewTextInput="textInputPrew" TextChanged="loadDistance_TB_TextChanged_1"/>
+        <TextBox x:Name="map_Link_TB" HorizontalAlignment="Left" Height="23" Margin="128,353,0,0"  VerticalAlignment="Top" Width="150" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="7"/>
+        <TextBox x:Name="commodity_TB" HorizontalAlignment="Left" Height="23" Margin="128,378,0,0"  VerticalAlignment="Top" Width="150" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="8"/>
+        <TextBox x:Name="weight_TB" HorizontalAlignment="Left" Height="23" Margin="128,403,0,0"  VerticalAlignment="Top" Width="50" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="9" PreviewTextInput="textInputPrew" MaxLength="5"/>
+        <TextBox x:Name="gross_TB" HorizontalAlignment="Left" Height="23" Margin="128,428,0,0"  VerticalAlignment="Top" Width="50" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="10" TextChanged="gross_TB_TextChanged" RenderTransformOrigin="0.25,0.504" PreviewTextInput="textInputPrew" />
+        <TextBox x:Name="mc_TB" HorizontalAlignment="Left" Height="23" Margin="128,453,0,0"  VerticalAlignment="Top" Width="70" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="11" PreviewTextInput="textInputPrew" MaxLength="8"/>
+        <TextBox x:Name="name_TB" HorizontalAlignment="Left" Height="23" Margin="128,478,0,0"  VerticalAlignment="Top" Width="99" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="12"/>
+        <TextBox x:Name="phone_TB" HorizontalAlignment="Left" Height="23" Margin="128,503,0,0"  VerticalAlignment="Top" Width="130" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="13"/>
+        <TextBox x:Name="broker_TB" HorizontalAlignment="Left" Height="23" Margin="128,528,0,0"  VerticalAlignment="Top" Width="160" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="14"/>
+        <TextBox x:Name="add_Info_TB" HorizontalAlignment="Left" Height="79" Margin="0,630,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="344" Background="#FFFFF2AB" AcceptsReturn="True" AcceptsTab="True" TabIndex="15"/>
+        <Button x:Name="clear_button" HorizontalAlignment="Left"  Margin="10,567,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="clear_button_Click" BorderThickness="0" ClickMode="Press" RenderTransformOrigin="0.5,0.5" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Refresh.png"/>
             </Button.Background>
@@ -65,7 +84,30 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="Option" Margin="298,367,10,124"  Width="30"  Height="30" Click="Option_Click"  BorderThickness="0" />
+        <Button x:Name="button"  HorizontalAlignment="Left" Margin="298,567,0,0" VerticalAlignment="Top" Width="30" Height="30" Padding="0" Click="Option_Click" BorderThickness="0" RenderTransformOrigin="1.68,0.773">
+            <Button.Background>
+                <ImageBrush ImageSource="plus.png"/>
+            </Button.Background>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Black"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
 
 
     </Grid>
