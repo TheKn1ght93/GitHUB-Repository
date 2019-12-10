@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Load_Option"
         mc:Ignorable="d"
-        Title="Load Info" Height="550" Width="390" ResizeMode="NoResize" >
+        Title="Load Info" Height="550" Width="344.4" ResizeMode="NoResize">
     <Grid Background="#FFFFF2AB">
         <Label x:Name="pu_DT_Label" Content="PU date/time: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25
                " Width="123" FontWeight="Bold" Grid.ColumnSpan="2"/>
@@ -32,7 +32,7 @@
         <TextBox x:Name="de_CS_TB" HorizontalAlignment="Left" Height="23" Margin="128,77,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="4"/>
         <TextBox x:Name="dh_TB" HorizontalAlignment="Left" Height="23" Margin="128,102,0,0"  VerticalAlignment="Top" Width="60" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="5" PreviewTextInput="textInputPrew" TextChanged="loadDistance_TB_TextChanged_1"/>
         <TextBox x:Name="loadDistance_TB" HorizontalAlignment="Left" Height="23" Margin="128,127,0,0"  VerticalAlignment="Top" Width="60" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="6" PreviewTextInput="textInputPrew" TextChanged="loadDistance_TB_TextChanged_1"/>
-        <TextBox x:Name="map_Link_TB" HorizontalAlignment="Left" Height="23" Margin="128,152,0,0"  VerticalAlignment="Top" Width="250" Background="#FFFFF2AB" BorderThickness="0,0,0,1" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="7"/>
+        <TextBox x:Name="map_Link_TB" HorizontalAlignment="Left" Height="23" Margin="128,152,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="7"/>
         <TextBox x:Name="commodity_TB" HorizontalAlignment="Left" Height="23" Margin="128,177,0,0"  VerticalAlignment="Top" Width="191" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="8"/>
         <TextBox x:Name="weight_TB" HorizontalAlignment="Left" Height="23" Margin="128,202,0,0"  VerticalAlignment="Top" Width="60" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="9" PreviewTextInput="textInputPrew" MaxLength="5"/>
         <TextBox x:Name="gross_TB" HorizontalAlignment="Left" Height="23" Margin="128,227,0,0"  VerticalAlignment="Top" Width="60" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="10" TextChanged="gross_TB_TextChanged" RenderTransformOrigin="0.25,0.504" PreviewTextInput="textInputPrew" />
@@ -41,13 +41,10 @@
         <TextBox x:Name="phone_TB" HorizontalAlignment="Left" Height="23" Margin="128,302,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="13"/>
         <TextBox x:Name="broker_TB" HorizontalAlignment="Left" Height="23" Margin="128,327,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="14"/>
         <TextBox x:Name="add_Info_TB" HorizontalAlignment="Left" Height="79" Margin="0,432,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="337" Background="#FFFFF2AB" Grid.ColumnSpan="2" AcceptsReturn="True" AcceptsTab="True" TabIndex="15"/>
-        <Button x:Name="clear_button" HorizontalAlignment="Left"  Margin="10,367,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="clear_button_Click" BorderThickness="0" ClickMode="Press" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="clear_button" HorizontalAlignment="Left"  Margin="10,367,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="clear_button_Click" BorderThickness="0" ClickMode="Press" RenderTransformOrigin="0.5,0.5" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
-                <ImageBrush ImageSource="baseline_delete_sweep_black_18dp.png" Stretch="None"/>
+                <ImageBrush ImageSource="Refresh.png"/>
             </Button.Background>
-            <Button.Foreground>
-                <ImageBrush ImageSource="baseline_delete_sweep_black_18dp.png" Stretch="None"/>
-            </Button.Foreground>
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="Transparent"/>
@@ -68,7 +65,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="Option" Content="+" FontSize="35" Margin="326,376,0,0" VerticalAlignment="Top" Width="35"  Height="35" Background="#FF78F178" Click="Option_Click" BorderBrush="{x:Null}" Foreground="Black" OpacityMask="#FFEC0707" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" ScrollViewer.CanContentScroll="True"/>
+        <Button x:Name="Option" Margin="298,367,10,124"  Width="30"  Height="30" Click="Option_Click"  BorderThickness="0" />
 
 
     </Grid>
