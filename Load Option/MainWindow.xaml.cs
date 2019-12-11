@@ -43,7 +43,172 @@ namespace Load_Option
             name,
             phone,
             broker,
-            addInfo;        
+            addInfo;
+
+       
+
+        private void pu_DT_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Down)
+            {
+                pu_CS_TB.Focus();
+            }
+        }
+        private void pu_CS_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                pu_DT_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                de_DT_TB.Focus();
+            }
+        }
+        private void de_DT_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                pu_CS_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                de_CS_TB.Focus();
+            }
+        }       
+        private void de_CS_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                de_DT_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                dh_TB.Focus();
+            }
+        }      
+        private void dh_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                de_CS_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                loadDistance_TB.Focus();
+            }
+        }
+        private void loadDistance_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                dh_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                map_Link_TB.Focus();
+            }
+        }
+        private void map_Link_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+               loadDistance_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                commodity_TB.Focus();
+            }
+        }
+        private void commodity_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                map_Link_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                weight_TB.Focus();
+            }
+        }
+        private void weight_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                commodity_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                gross_TB.Focus();
+            }
+        }
+        private void gross_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                weight_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                mc_TB.Focus();
+            }
+        }
+        private void mc_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                gross_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                name_TB.Focus();
+            }
+        }
+        private void name_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                mc_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                phone_TB.Focus();
+            }
+        }
+        private void phone_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                name_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                broker_TB.Focus();
+            }
+        }
+        private void broker_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                phone_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                add_Info_TB.Focus();
+            }
+        }
+        private void add_Info_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Up)
+            {
+                broker_TB.Focus();
+            }
+        }
+             
+
+
+
+
 
         private void loadDistance_TB_TextChanged_1(object sender, TextChangedEventArgs e)
         {
