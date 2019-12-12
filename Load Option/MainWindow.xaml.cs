@@ -29,7 +29,8 @@ namespace Load_Option
         {
             InitializeComponent();            
         }
-        string pu_DT,
+        string driverName,
+            pu_DT,
             pu_CS,
             de_DT,
             de_CS,
@@ -78,6 +79,8 @@ namespace Load_Option
             Option option = new Option();
             option.Show();
 
+
+            driverName = driverName_Label.Content + driverName_TB.Text;
             pu_DT = pu_DT_Label.Content + pu_DT_TB.Text;
             pu_CS = pu_CS_Label.Content + pu_CS_TB.Text;
             de_DT = de_DT_Label.Content + de_DT_TB.Text;
@@ -94,11 +97,12 @@ namespace Load_Option
             broker = broker_Label.Content + broker_TB.Text;
             addInfo = addInfo_Label.Content + add_Info_TB.Text;
 
-            option.text_Option(pu_DT, pu_CS, de_DT, de_CS, dh, loadDis, mapLink, commodity,
+            option.text_Option(driverName, pu_DT, pu_CS, de_DT, de_CS, dh, loadDis, mapLink, commodity,
                 weight, gross, mc, name, phone, broker, addInfo);
         }
         private void clear_button_Click(object sender, RoutedEventArgs e)
         {
+            driverName_TB.Text = "";
             pu_DT_TB.Text = "";
             pu_CS_TB.Text = "";
             de_DT_TB.Text = "";
