@@ -20,7 +20,6 @@ namespace Load_Option
         {
             InitializeComponent();
         }
-
         public void text_Option(string driverName, string pu_DT, string pu_CS, string de_DT, string de_CS, string dh, string loadDis, string mapLink, string commodity, string weight,
             string gross, string mc, string name, string phone, string broker, string addInfo)
         {
@@ -71,6 +70,13 @@ namespace Load_Option
             Clipboard.SetText(text);
             this.Close();
         }
-        
+        private void checkBox_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Topmost = true;
+        }
+        private void checkBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            this.Topmost = false;
+        }
     }
 }

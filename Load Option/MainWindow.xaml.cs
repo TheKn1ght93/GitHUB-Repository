@@ -27,30 +27,9 @@ namespace Load_Option
     {
         public MainWindow()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
-        string driverName,
-            pu_DT,
-            pu_CS,
-            de_DT,
-            de_CS,
-            dh,
-            loadDis,
-            mapLink,
-            commodity,
-            weight,
-            gross,
-            mc,
-            name,
-            phone,
-            broker,
-            addInfo;
 
-
-
-       
-
-      
 
         private void loadDistance_TB_TextChanged_1(object sender, TextChangedEventArgs e)
         {
@@ -65,6 +44,10 @@ namespace Load_Option
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
+        private void textInputPrew2(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9.]+").IsMatch(e.Text);
+        }
         private void gross_TB_TextChanged(object sender, TextChangedEventArgs e)
         {
             string gross = gross_TB.Text;
@@ -76,6 +59,23 @@ namespace Load_Option
         }
         private void Option_Click(object sender, RoutedEventArgs e)
         {
+            string driverName,
+          pu_DT,
+          pu_CS,
+          de_DT,
+          de_CS,
+          dh,
+          loadDis,
+          mapLink,
+          commodity,
+          weight,
+          gross,
+          mc,
+          name,
+          phone,
+          broker,
+          addInfo;
+
             Option option = new Option();
             option.Show();
 
@@ -113,6 +113,7 @@ namespace Load_Option
             commodity_TB.Text = "";
             weight_TB.Text = "";
             gross_TB.Text = "";
+            rateCalc_TB.Text = "";
             mc_TB.Text = "";
             name_TB.Text = "";
             phone_TB.Text = "";
@@ -121,16 +122,34 @@ namespace Load_Option
             rateResult.Content = "0";
             totalMiles_Label.Content = "0";
         }
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string rateCalculation = rateCalc_TB.Text;
+            string totalMileas = totalMiles_Label.Content.ToString();
+            double.TryParse(rateCalculation, out double rateCalcToDouble);
+            double.TryParse(totalMileas, out double totalMileastoDouble);
+            double rateCalcRes = rateCalcToDouble * totalMileastoDouble;
+            gross_TB.Text = rateCalcRes.ToString("N0");
 
+        }
 
-
-
-
+        //Navigation thru textboxes
+        private void driverName_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Down)
+            {
+                pu_DT_TB.Focus();
+            }
+        }
         private void pu_DT_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Down)
             {
                 pu_CS_TB.Focus();
+            }
+            else if (e.Key == Key.Up)
+            {
+                driverName_TB.Focus();
             }
         }
         private void pu_CS_TB_PreviewKeyDown(object sender, KeyEventArgs e)
@@ -231,6 +250,25 @@ namespace Load_Option
             {
                 mc_TB.Focus();
             }
+            else if (e.Key == Key.Right)
+            {
+                rateCalc_TB.Focus();
+            }
+        }
+        private void rateCalc_TB_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Left)
+            {
+                gross_TB.Focus();
+            }
+            else if (e.Key == Key.Up)
+            {
+                weight_TB.Focus();
+            }
+            else if (e.Key == Key.Down)
+            {
+                mc_TB.Focus();
+            }
         }
         private void mc_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
@@ -283,7 +321,19 @@ namespace Load_Option
                 broker_TB.Focus();
             }
         }
+        //OnTop Checkbox
+        private void checkBox_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Topmost = true;
+        }
+        private void on_Top_CBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            this.Topmost = false;
+        }
+        //Select Text on Focus 
+        private void pu_DT_TB_GotMouseCapture(object sender, MouseEventArgs e)
+        {
+            (sender as TextBox).SelectAll();
+        }
     }
-
-
 }

@@ -5,10 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Load_Option"
         mc:Ignorable="d"
-        Title="Load Option" Height="400" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" >
+        Title="Option Done" Height="400" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Icon="check.ico" HorizontalAlignment="Left" VerticalAlignment="Top" >
     <Grid Background="#FFFFF2AB">
         <TextBox x:Name="loadText" HorizontalAlignment="Left"  Background="#FFFFF2AB" Height="330" TextWrapping="NoWrap"  VerticalAlignment="Top" Width="394" AcceptsReturn="True" AcceptsTab="True" BorderThickness="0" Margin="0,0,-2,0"/>
-        <Button x:Name="clipBoard_copy" Content="Copy to Clipboard" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="142,335,0,0" Click="clipBoard_copy_Click" Height="19" VerticalContentAlignment="Center" Cursor="Hand" Focusable="False" IsTabStop="False" ToolTip="Copy" HorizontalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0"/>
+        <Button x:Name="clipBoard_copy" Content="Copy to Clipboard" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="265,330,0,0" Click="clipBoard_copy_Click" Height="25" VerticalContentAlignment="Center" Cursor="Hand" Focusable="False" IsTabStop="False" ToolTip="Copy" HorizontalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0" FontWeight="Bold" Background="#FF7CEC9B"/>
+        <CheckBox x:Name="checkBox" Content="On Top" HorizontalAlignment="Left" Margin="10,335,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="64" IsChecked="True" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked">
+            <CheckBox.BorderBrush>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </CheckBox.BorderBrush>
+            <CheckBox.Background>
+                <SolidColorBrush Color="#FFFFF2AB" Opacity="0.5"/>
+            </CheckBox.Background>
+        </CheckBox>
 
     </Grid>
 </Window>

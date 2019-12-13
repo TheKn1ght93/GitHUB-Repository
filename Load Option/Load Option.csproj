@@ -169,5 +169,8 @@
   <ItemGroup>
     <Resource Include="truck-64.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="check.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
