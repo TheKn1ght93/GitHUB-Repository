@@ -30,7 +30,6 @@ namespace Load_Option
             InitializeComponent();
         }
 
-
         private void loadDistance_TB_TextChanged_1(object sender, TextChangedEventArgs e)
         {
             string str1 = dh_TB.Text;
@@ -60,21 +59,23 @@ namespace Load_Option
         private void Option_Click(object sender, RoutedEventArgs e)
         {
             string driverName,
-          pu_DT,
-          pu_CS,
-          de_DT,
-          de_CS,
-          dh,
-          loadDis,
-          mapLink,
-          commodity,
-          weight,
-          gross,
-          mc,
-          name,
-          phone,
-          broker,
-          addInfo;
+         pu_DT,
+         pu_CS,
+         de_DT,
+         de_CS,
+         dh,
+         loadDis,
+         mapLink,
+         commodity,
+         weight,
+         gross,
+         mc,
+         name,
+         phone,
+         broker,
+         addInfo;
+
+
 
             Option option = new Option();
             option.Show();
@@ -136,187 +137,190 @@ namespace Load_Option
         //Navigation thru textboxes
         private void driverName_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Down)
+            if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 pu_DT_TB.Focus();
             }
         }
         private void pu_DT_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Down)
+            if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 pu_CS_TB.Focus();
             }
-            else if (e.Key == Key.Up)
+            else if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 driverName_TB.Focus();
             }
         }
         private void pu_CS_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 pu_DT_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 de_DT_TB.Focus();
             }
         }
         private void de_DT_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 pu_CS_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 de_CS_TB.Focus();
             }
         }
+
+      
+
         private void de_CS_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 de_DT_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 dh_TB.Focus();
             }
         }
         private void dh_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 de_CS_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 loadDistance_TB.Focus();
             }
         }
         private void loadDistance_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 dh_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 map_Link_TB.Focus();
             }
         }
         private void map_Link_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 loadDistance_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 commodity_TB.Focus();
             }
         }
         private void commodity_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 map_Link_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 weight_TB.Focus();
             }
         }
         private void weight_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 commodity_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 gross_TB.Focus();
             }
         }
         private void gross_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 weight_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 mc_TB.Focus();
             }
-            else if (e.Key == Key.Right)
+            else if (e.Key == Key.Right && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 rateCalc_TB.Focus();
             }
         }
         private void rateCalc_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Left)
+            if (e.Key == Key.Left && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 gross_TB.Focus();
             }
-            else if (e.Key == Key.Up)
+            else if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 weight_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 mc_TB.Focus();
             }
         }
         private void mc_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 gross_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 name_TB.Focus();
             }
         }
         private void name_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 mc_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 phone_TB.Focus();
             }
         }
         private void phone_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 name_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 broker_TB.Focus();
             }
         }
         private void broker_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 phone_TB.Focus();
             }
-            else if (e.Key == Key.Down)
+            else if (e.Key == Key.Down && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 add_Info_TB.Focus();
             }
         }
         private void add_Info_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up && Keyboard.Modifiers == ModifierKeys.Control)
             {
                 broker_TB.Focus();
             }
@@ -330,10 +334,11 @@ namespace Load_Option
         {
             this.Topmost = false;
         }
-        //Select Text on Focus 
-        private void pu_DT_TB_GotMouseCapture(object sender, MouseEventArgs e)
+
+        private void trim_spaces_tb_TextChanged(object sender, TextChangedEventArgs e)
         {
-            (sender as TextBox).SelectAll();
+            TextBox textBox = (TextBox)sender;
+            textBox.Text = textBox.Text.Trim();
         }
     }
 }

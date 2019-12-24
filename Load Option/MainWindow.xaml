@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Load_Option"
         mc:Ignorable="d"
-        Title="Load Info" Height="738.4" Width="350" Icon="truck-64.ico">
+        Title="Load Info" Height="738.4" Width="350" Icon="truck-64.ico" MinWidth="350" MinHeight="750">
     <Grid Background="#FFFFF2AB" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True">
         <Label x:Name="driverName_Label" Content="Driver: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" FontWeight="Bold" Margin="0,0,0,0"/>
         <Label x:Name="pu_DT_Label" Content="PU date/time: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" FontWeight="Bold" Margin="0,25,0,0"/>
@@ -26,7 +26,7 @@
         <Label x:Name="addInfo_Label" Content="Additional Info: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" Margin="0,622,0,0" FontWeight="Bold"/>
         <Label x:Name="rateResult" Content="0" HorizontalAlignment="Left" Margin="186,456,0,0" VerticalAlignment="Top" Width="45" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <Label x:Name="totalMiles_Label" Content="0" HorizontalAlignment="Left" Margin="240,357,0,0" VerticalAlignment="Top" FontWeight="SemiBold" Width="50"/>
-        <TextBox x:Name="pu_DT_TB" HorizontalAlignment="Left" Height="75" Margin="128,25,0,0"  VerticalAlignment="Top" Width="200" BorderThickness="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TabIndex="2" AcceptsReturn="True" ScrollViewer.CanContentScroll="True" PreviewKeyDown="pu_DT_TB_PreviewKeyDown" AutoWordSelection="True" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="pu_DT_TB" HorizontalAlignment="Left" Height="75" Margin="128,25,0,0"  VerticalAlignment="Top" Width="200" BorderThickness="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TabIndex="2" AcceptsReturn="True" ScrollViewer.CanContentScroll="True" PreviewKeyDown="pu_DT_TB_PreviewKeyDown" AutoWordSelection="True">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
@@ -34,72 +34,72 @@
                 <SolidColorBrush Color="#FFFFF2AB"/>
             </TextBox.Background>
         </TextBox>
-        <TextBox x:Name="pu_CS_TB" HorizontalAlignment="Left" Height="75" Margin="128,102,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" TabIndex="3" ScrollViewer.CanContentScroll="True" AcceptsReturn="True" PreviewKeyDown="pu_CS_TB_PreviewKeyDown" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="pu_CS_TB" HorizontalAlignment="Left" Height="75" Margin="128,102,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" TabIndex="3" ScrollViewer.CanContentScroll="True" AcceptsReturn="True" PreviewKeyDown="pu_CS_TB_PreviewKeyDown">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="de_DT_TB" HorizontalAlignment="Left" Height="75" Margin="128,179,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TabIndex="4" AcceptsReturn="True" PreviewKeyDown="de_DT_TB_PreviewKeyDown" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="de_DT_TB" HorizontalAlignment="Left" Height="75" Margin="128,179,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TabIndex="4" AcceptsReturn="True" PreviewKeyDown="de_DT_TB_PreviewKeyDown">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="de_CS_TB" HorizontalAlignment="Left" Height="75" Margin="128,256,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TabIndex="5" AcceptsReturn="True" PreviewKeyDown="de_CS_TB_PreviewKeyDown" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="de_CS_TB" HorizontalAlignment="Left" Height="75" Margin="128,256,0,0"  VerticalAlignment="Top" Width="200" Background="#FFFFF2AB" BorderThickness="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TabIndex="5" AcceptsReturn="True" PreviewKeyDown="de_CS_TB_PreviewKeyDown">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="dh_TB" HorizontalAlignment="Left" Height="23" Margin="128,334,0,0"  VerticalAlignment="Top" Width="50" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="6" PreviewTextInput="textInputPrew" TextChanged="loadDistance_TB_TextChanged_1" PreviewKeyDown="dh_TB_PreviewKeyDown" MaxLines="1" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="dh_TB" HorizontalAlignment="Left" Height="23" Margin="128,334,0,0"  VerticalAlignment="Top" Width="50" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="6" PreviewTextInput="textInputPrew" TextChanged="loadDistance_TB_TextChanged_1" PreviewKeyDown="dh_TB_PreviewKeyDown" MaxLines="1">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="loadDistance_TB" HorizontalAlignment="Left" Height="23" Margin="128,359,0,0"  VerticalAlignment="Top" Width="50" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="7" PreviewTextInput="textInputPrew" TextChanged="loadDistance_TB_TextChanged_1" PreviewKeyDown="loadDistance_TB_PreviewKeyDown" MaxLines="1" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="loadDistance_TB" HorizontalAlignment="Left" Height="23" Margin="128,359,0,0"  VerticalAlignment="Top" Width="50" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="7" PreviewTextInput="textInputPrew" TextChanged="loadDistance_TB_TextChanged_1" PreviewKeyDown="loadDistance_TB_PreviewKeyDown" MaxLines="1">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="map_Link_TB" HorizontalAlignment="Left" Height="23" Margin="128,384,0,0"  VerticalAlignment="Top" Width="107" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="8" PreviewKeyDown="map_Link_TB_PreviewKeyDown" MaxLines="1" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="map_Link_TB" HorizontalAlignment="Left" Height="23" Margin="128,384,0,0"  VerticalAlignment="Top" Width="107" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="8" PreviewKeyDown="map_Link_TB_PreviewKeyDown" MaxLines="1">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="commodity_TB" HorizontalAlignment="Left" Height="23" Margin="128,409,0,0"  VerticalAlignment="Top" Width="107" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="9" PreviewKeyDown="commodity_TB_PreviewKeyDown" MaxLines="1" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="commodity_TB" HorizontalAlignment="Left" Height="23" Margin="128,409,0,0"  VerticalAlignment="Top" Width="107" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="9" PreviewKeyDown="commodity_TB_PreviewKeyDown" MaxLines="1" TextChanged="trim_spaces_tb_TextChanged">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="weight_TB" HorizontalAlignment="Left" Height="23" Margin="128,434,0,0"  VerticalAlignment="Top" Width="50" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="10" PreviewTextInput="textInputPrew" MaxLength="5" PreviewKeyDown="weight_TB_PreviewKeyDown" MaxLines="1" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="weight_TB" HorizontalAlignment="Left" Height="23" Margin="128,434,0,0"  VerticalAlignment="Top" Width="50" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="10" PreviewTextInput="textInputPrew" MaxLength="5" PreviewKeyDown="weight_TB_PreviewKeyDown" MaxLines="1">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="gross_TB" HorizontalAlignment="Left" Height="23" Margin="128,459,0,0"  VerticalAlignment="Top" Width="50" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="11" TextChanged="gross_TB_TextChanged" RenderTransformOrigin="0.25,0.504" PreviewTextInput="textInputPrew" PreviewKeyDown="gross_TB_PreviewKeyDown" MaxLines="1" GotMouseCapture="pu_DT_TB_GotMouseCapture" >
+        <TextBox x:Name="gross_TB" HorizontalAlignment="Left" Height="23" Margin="128,459,0,0"  VerticalAlignment="Top" Width="50" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="11" TextChanged="gross_TB_TextChanged" RenderTransformOrigin="0.25,0.504" PreviewTextInput="textInputPrew" PreviewKeyDown="gross_TB_PreviewKeyDown" MaxLines="1" >
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="mc_TB" HorizontalAlignment="Left" Height="23" Margin="128,484,0,0"  VerticalAlignment="Top" Width="65" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="13" PreviewTextInput="textInputPrew" MaxLength="8" PreviewKeyDown="mc_TB_PreviewKeyDown" MaxLines="1" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="mc_TB" HorizontalAlignment="Left" Height="23" Margin="128,484,0,0"  VerticalAlignment="Top" Width="65" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="13" PreviewTextInput="textInputPrew" MaxLength="8" PreviewKeyDown="mc_TB_PreviewKeyDown" MaxLines="1" TextChanged="trim_spaces_tb_TextChanged">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="name_TB" HorizontalAlignment="Left" Height="23" Margin="128,509,0,0"  VerticalAlignment="Top" Width="80" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="14" PreviewKeyDown="name_TB_PreviewKeyDown" MaxLines="1" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="name_TB" HorizontalAlignment="Left" Height="23" Margin="128,509,0,0"  VerticalAlignment="Top" Width="80" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="14" PreviewKeyDown="name_TB_PreviewKeyDown" MaxLines="1" TextChanged="trim_spaces_tb_TextChanged">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="phone_TB" HorizontalAlignment="Left" Height="23" Margin="128,534,0,0"  VerticalAlignment="Top" Width="103" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="15" PreviewKeyDown="phone_TB_PreviewKeyDown" MaxLines="1" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="phone_TB" HorizontalAlignment="Left" Height="23" Margin="128,534,0,0"  VerticalAlignment="Top" Width="103" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="15" PreviewKeyDown="phone_TB_PreviewKeyDown" MaxLines="1" TextChanged="trim_spaces_tb_TextChanged">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="broker_TB" HorizontalAlignment="Left" Height="23" Margin="128,559,0,0"  VerticalAlignment="Top" Width="130" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="16" PreviewKeyDown="broker_TB_PreviewKeyDown" MaxLines="1" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="broker_TB" HorizontalAlignment="Left" Height="23" Margin="128,559,0,0"  VerticalAlignment="Top" Width="130" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="16" PreviewKeyDown="broker_TB_PreviewKeyDown" MaxLines="1" TextChanged="trim_spaces_tb_TextChanged" AcceptsReturn="True">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="add_Info_TB" HorizontalAlignment="Left" Height="75" Margin="0,647,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="342" Background="#FFFFF2AB" AcceptsReturn="True" AcceptsTab="True" TabIndex="17" PreviewKeyDown="add_Info_TB_PreviewKeyDown" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="add_Info_TB" HorizontalAlignment="Left" Height="75" Margin="0,647,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="342" Background="#FFFFF2AB" AcceptsReturn="True" AcceptsTab="True" TabIndex="17" PreviewKeyDown="add_Info_TB_PreviewKeyDown">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
@@ -152,12 +152,12 @@
                 </Style>
             </Button.Style>
         </Button>
-        <TextBox x:Name="driverName_TB" Background="#FFFFF2AB" HorizontalAlignment="Left" Height="23" Margin="128,0,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="200" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" TabIndex="1" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center" PreviewKeyDown="driverName_TB_PreviewKeyDown" MaxLines="1" CharacterCasing="Upper" AutoWordSelection="True" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="driverName_TB" Background="#FFFFF2AB" HorizontalAlignment="Left" Height="23" Margin="128,0,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="200" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" TabIndex="1" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center" PreviewKeyDown="driverName_TB_PreviewKeyDown" MaxLines="1" CharacterCasing="Upper" AutoWordSelection="True" TextChanged="trim_spaces_tb_TextChanged">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="rateCalc_TB" HorizontalAlignment="Left" Height="25" Background="#FFFFF2AB" Margin="240,457,0,0" VerticalAlignment="Top" Width="50" BorderThickness="0,0,0,1"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalScrollBarVisibility="Disabled" MaxLines="1" AutoWordSelection="True" FontWeight="Bold" TextChanged="textBox_TextChanged" PreviewTextInput="textInputPrew2" TabIndex="12" HorizontalScrollBarVisibility="Disabled" PreviewKeyDown="rateCalc_TB_PreviewKeyDown" GotMouseCapture="pu_DT_TB_GotMouseCapture">
+        <TextBox x:Name="rateCalc_TB" HorizontalAlignment="Left" Height="25" Background="#FFFFF2AB" Margin="240,457,0,0" VerticalAlignment="Top" Width="50" BorderThickness="0,0,0,1"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalScrollBarVisibility="Disabled" MaxLines="1" AutoWordSelection="True" FontWeight="Bold" TextChanged="textBox_TextChanged" PreviewTextInput="textInputPrew2" TabIndex="12" HorizontalScrollBarVisibility="Disabled" PreviewKeyDown="rateCalc_TB_PreviewKeyDown">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
@@ -167,6 +167,7 @@
                 <SolidColorBrush Color="#FFFFF2AB" Opacity="0.5"/>
             </CheckBox.Background>
         </CheckBox>
+        <Button x:Name="eld_Calc"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Margin="240,587,0,0"/>
 
 
     </Grid>
