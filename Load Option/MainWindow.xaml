@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Load_Option"
         mc:Ignorable="d"
-        Title="Load Info" Height="738.4" Width="350" Icon="truck-64.ico" MinWidth="350" MinHeight="750">
+        Title="Load Info" Height="750" Width="350" Icon="truck-64.ico" MinWidth="350" MinHeight="750" MaxWidth="350" MaxHeight="750" ResizeMode="NoResize">
     <Grid Background="#FFFFF2AB" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True">
         <Label x:Name="driverName_Label" Content="Driver: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" FontWeight="Bold" Margin="0,0,0,0"/>
         <Label x:Name="pu_DT_Label" Content="PU date/time: " HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="123" FontWeight="Bold" Margin="0,25,0,0"/>
@@ -64,7 +64,7 @@
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="commodity_TB" HorizontalAlignment="Left" Height="23" Margin="128,409,0,0"  VerticalAlignment="Top" Width="107" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="9" PreviewKeyDown="commodity_TB_PreviewKeyDown" MaxLines="1" TextChanged="trim_spaces_tb_TextChanged">
+        <TextBox x:Name="commodity_TB" HorizontalAlignment="Left" Height="23" Margin="128,409,0,0"  VerticalAlignment="Top" Width="107" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="9" PreviewKeyDown="commodity_TB_PreviewKeyDown" MaxLines="1">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
@@ -79,17 +79,17 @@
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="mc_TB" HorizontalAlignment="Left" Height="23" Margin="128,484,0,0"  VerticalAlignment="Top" Width="65" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="13" PreviewTextInput="textInputPrew" MaxLength="8" PreviewKeyDown="mc_TB_PreviewKeyDown" MaxLines="1" TextChanged="trim_spaces_tb_TextChanged">
+        <TextBox x:Name="mc_TB" HorizontalAlignment="Left" Height="23" Margin="128,484,0,0"  VerticalAlignment="Top" Width="65" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="13" PreviewTextInput="textInputPrew" MaxLength="8" PreviewKeyDown="mc_TB_PreviewKeyDown" MaxLines="1">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="name_TB" HorizontalAlignment="Left" Height="23" Margin="128,509,0,0"  VerticalAlignment="Top" Width="80" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="14" PreviewKeyDown="name_TB_PreviewKeyDown" MaxLines="1" TextChanged="trim_spaces_tb_TextChanged">
+        <TextBox x:Name="name_TB" HorizontalAlignment="Left" Height="23" Margin="128,509,0,0"  VerticalAlignment="Top" Width="80" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="14" PreviewKeyDown="name_TB_PreviewKeyDown" MaxLines="1">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="phone_TB" HorizontalAlignment="Left" Height="23" Margin="128,534,0,0"  VerticalAlignment="Top" Width="103" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="15" PreviewKeyDown="phone_TB_PreviewKeyDown" MaxLines="1" TextChanged="trim_spaces_tb_TextChanged">
+        <TextBox x:Name="phone_TB" HorizontalAlignment="Left" Height="23" Margin="128,534,0,0"  VerticalAlignment="Top" Width="103" Background="#FFFFF2AB" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" TabIndex="15" PreviewKeyDown="phone_TB_PreviewKeyDown" MaxLines="1">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
@@ -99,7 +99,7 @@
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="add_Info_TB" HorizontalAlignment="Left" Height="75" Margin="0,647,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="342" Background="#FFFFF2AB" AcceptsReturn="True" AcceptsTab="True" TabIndex="17" PreviewKeyDown="add_Info_TB_PreviewKeyDown">
+        <TextBox x:Name="add_Info_TB" HorizontalAlignment="Left" Height="75" Margin="0,647,0,-1" TextWrapping="Wrap"  VerticalAlignment="Top" Width="343" Background="#FFFFF2AB" AcceptsReturn="True" AcceptsTab="True" TabIndex="17" PreviewKeyDown="add_Info_TB_PreviewKeyDown">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
@@ -152,7 +152,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <TextBox x:Name="driverName_TB" Background="#FFFFF2AB" HorizontalAlignment="Left" Height="23" Margin="128,0,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="200" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" TabIndex="1" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center" PreviewKeyDown="driverName_TB_PreviewKeyDown" MaxLines="1" CharacterCasing="Upper" AutoWordSelection="True" TextChanged="trim_spaces_tb_TextChanged">
+        <TextBox x:Name="driverName_TB" Background="#FFFFF2AB" HorizontalAlignment="Left" Height="23" Margin="128,0,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="200" BorderThickness="0,0,0,1" VerticalContentAlignment="Bottom" TabIndex="1" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center" PreviewKeyDown="driverName_TB_PreviewKeyDown" MaxLines="1" CharacterCasing="Upper" AutoWordSelection="True">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </TextBox.BorderBrush>
@@ -167,7 +167,30 @@
                 <SolidColorBrush Color="#FFFFF2AB" Opacity="0.5"/>
             </CheckBox.Background>
         </CheckBox>
-        <Button x:Name="eld_Calc"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Margin="240,587,0,0"/>
+        <Button x:Name="eld_Calc"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Margin="240,587,0,0" Click="eld_Calc_Click" Foreground="{x:Null}" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="ELD.png" Stretch="Uniform"/>
+            </Button.Background>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Black"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
 
 
     </Grid>

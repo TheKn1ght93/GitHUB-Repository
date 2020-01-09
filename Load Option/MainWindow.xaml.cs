@@ -134,6 +134,7 @@ namespace Load_Option
 
         }
 
+
         //Navigation thru textboxes
         private void driverName_TB_PreviewKeyDown(object sender, KeyEventArgs e)
         {
@@ -339,6 +340,12 @@ namespace Load_Option
         {
             TextBox textBox = (TextBox)sender;
             textBox.Text = textBox.Text.Trim();
+        }
+
+        private void eld_Calc_Click(object sender, RoutedEventArgs e)
+        {
+            ELD_Time_Calculation eld_calc = new ELD_Time_Calculation();
+            eld_calc.Show();
         }
     }
 }
