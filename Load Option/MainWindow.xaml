@@ -167,30 +167,6 @@
                 <SolidColorBrush Color="#FFFFF2AB" Opacity="0.5"/>
             </CheckBox.Background>
         </CheckBox>
-        <Button x:Name="eld_Calc"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Margin="240,587,0,0" Click="eld_Calc_Click" Foreground="{x:Null}" BorderBrush="{x:Null}">
-            <Button.Background>
-                <ImageBrush ImageSource="ELD.png" Stretch="Uniform"/>
-            </Button.Background>
-            <Button.Style>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="Background" Value="Transparent"/>
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="{x:Type Button}">
-                                <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="Black"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-        </Button>
 
 
     </Grid>

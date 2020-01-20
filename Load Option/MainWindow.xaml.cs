@@ -342,10 +342,6 @@ namespace Load_Option
             textBox.Text = textBox.Text.Trim();
         }
 
-        private void eld_Calc_Click(object sender, RoutedEventArgs e)
-        {
-            ELD_Time_Calculation eld_calc = new ELD_Time_Calculation();
-            eld_calc.Show();
-        }
+        
     }
 }
